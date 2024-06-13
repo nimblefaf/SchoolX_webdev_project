@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
+
+.title {
+    font-size: 64px;
+    color: $secondary;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
