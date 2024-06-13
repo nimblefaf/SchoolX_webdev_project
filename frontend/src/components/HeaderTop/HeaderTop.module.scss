@@ -1,0 +1,60 @@
+@import 'variables';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    background: $dark;
+}
+
+.menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav {
+    overflow: auto;
+    margin-right: auto;
+
+    &List {
+        display: flex;
+
+        &Item {
+            margin: 0 10px;
+
+            &>a {
+                color: $text-light;
+                font-family: $font-lato;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 900;
+                letter-spacing: 1px;
+                line-height: normal;
+                text-transform: uppercase;
+                transition: $transition;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+    
+}
+
+.language {
+    color: $text-light;
+    margin-left: auto;
+}
+
+.profile {
+    margin-left: 20px;
+    margin-right: 20px;
+}

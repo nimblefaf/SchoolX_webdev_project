@@ -1,0 +1,87 @@
+@import 'variables';
+@import 'mixins';
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+
+    &:hover {
+        box-shadow: $box-shadow-hover;
+    }
+
+    &Image {
+        position: relative;
+        margin-bottom: 15px;
+        aspect-ratio: 1 / 1;
+    }
+
+    &Desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &Name {
+            @include h4-title;
+            margin-bottom: 6px;
+            text-align: center;
+            transition: $transition;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &Text {
+            @include desc-text;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        &Price {
+            color: $black-color;
+            font-family: $font-lato;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            text-align: left; 
+        }
+
+        &BuyBtn {
+            position: relative;
+            z-index: 1;
+            width: 55px;
+            padding: 7px 0;
+            border: none;
+            border-radius: 5px;
+            background: $primary;
+            color: $white-color;
+            cursor: pointer;
+            font-family: $font-lato;
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: normal;
+            outline: none;
+            text-transform: uppercase;
+            transition: $transition;
+            
+            &:hover {
+                background: $primary-hover;
+            }
+        }
+
+    }
+    &Bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        gap: 20px;
+    }
+}

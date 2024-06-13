@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'mixins';
+
+.catalog {
+    &Title {
+        @include h2-title;
+
+        margin-bottom: 55px;
+        text-align: center;
+    }
+
+
+
+    &Grid {
+        display: grid;
+        margin-bottom: 100px;
+        gap: 32px 32px;
+        grid-template-columns: repeat(6, 2fr);
+    }
+}
+
+.active {
+    color: $hover-color;
+}

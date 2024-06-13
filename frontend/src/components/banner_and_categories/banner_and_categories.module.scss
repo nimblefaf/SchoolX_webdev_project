@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'mixins';
+
+.banner_and_categories{
+    display: flex;
+    gap: 10px;
+    margin-top: 32px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 370px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.categoryArrow {
+    margin-left: auto;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+
+.service_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serive_image {
+    width: 50px;
+    height: 50px;
+}
